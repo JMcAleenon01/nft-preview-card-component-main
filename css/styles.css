@@ -1,0 +1,131 @@
+/* CSS RESET */
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+:root {
+    /* ## Colors */
+    /* ### Primary */
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+    --Vdb_main_BG: hsl(217, 54%, 11%);
+    --Vdb_card_BG: hsl(216, 50%, 16%);
+    --Vdb_line: hsl(215, 32%, 27%);
+}
+
+body {
+    background-color: var(--Vdb_main_BG);
+    color: white;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    height: 37.5rem;
+    width: 22rem;
+    padding: 27px 25px;
+    background-color: var(--Vdb_card_BG);
+    display: flex;
+    flex-direction: column;
+    border-radius: 18px;
+    -webkit-box-shadow: 0px 21px 58px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 21px 58px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 21px 58px 0px rgba(0,0,0,0.75);
+}
+
+.card-nft-img {
+    height: 18.9rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 23px;
+}
+
+.card h1 {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.card h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.card header p {
+    font-weight: 300;
+    color: var(--Softblue);
+    font-size: inherit;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.card section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: var(--Cyan);
+    font-size: 16.5px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+h2 img {
+    margin-right: 7px;
+}
+
+.card-time {
+    display: flex;
+    align-items: center;
+    font-size: 16.5px;
+    font-weight: 400;
+}
+
+.card-time img {
+    height: 18px;
+    width: 18px;
+    margin-right: 7px;
+}
+
+hr {
+    border: 0.5px solid var(--Vdb_line);
+    margin: 10px 0 15px 0;
+}
+
+.card-author {
+    color: var(--Softblue);
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.card-author img {
+    width: 34px;
+    border: 0.5px solid white;
+    border-radius: 50%;
+    margin-right: 15.5px;
+}
+
+.card-author a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2px;
+}
+
+.card-author a:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
